@@ -1,13 +1,9 @@
-@extends('layout/main')
+@extends('layout/app')
 
 @section('title', 'Sistem Pengolahan Data Mahasiswa')
 
-@section('container')
-    <div class="container">
-        <div class="row">
-            <div class="col-10">
-                <h1 class="mt-3">Selamat Datang!</h1>
-            </div>
-        </div>
-    </div>
+@section('content')
+<h2>Wlcome!</h2>
+
+
 @endsection
