@@ -5,33 +5,23 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link " href="./examples/icons.html">
-        <i class="ni ni-planet text-blue"></i> Icons
+      <a class="nav-link " href="{{ url('/') }}">
+        <i class="ni ni-planet text-blue"></i> Home
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link " href="./examples/maps.html">
-        <i class="ni ni-pin-3 text-orange"></i> Maps
+      <a class="nav-link " href="{{ url('/about') }}">
+        <i class="ni ni-pin-3 text-orange"></i> About
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link " href="./examples/profile.html">
-        <i class="ni ni-single-02 text-yellow"></i> User profile
+      <a class="nav-link " href="{{ url('/mahasiswa') }}">
+        <i class="ni ni-single-02 text-yellow"></i> Mahasiswa
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link " href="./examples/tables.html">
-        <i class="ni ni-bullet-list-67 text-red"></i> Tables
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="./examples/login.html">
-        <i class="ni ni-key-25 text-info"></i> Login
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="./examples/register.html">
-        <i class="ni ni-circle-08 text-pink"></i> Register
+      <a class="nav-link " href="{{ url('/students') }}">
+        <i class="ni ni-bullet-list-67 text-red"></i> Student
       </a>
     </li>
   </ul>
@@ -47,7 +37,7 @@
 <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
 <div class="container-fluid">
   <!-- Brand -->
-  <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.html">Dashboard</a>
+  <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.html">@yield('title')</a>
   <!-- Form -->
   <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
     <div class="form-group mb-0">

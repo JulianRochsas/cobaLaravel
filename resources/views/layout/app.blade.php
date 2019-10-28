@@ -99,10 +99,8 @@
     <div class="container-fluid mt--7">
       <div class="row">
         <!-- conten 1 -->
-        <div class="col-xl-4">
-          <!-- conten 2 -->
-          @yield('content')
-        </div>
+        @yield('content')
+
       </div>
       <div class="row mt-5">
        <!-- conten 3 -->
