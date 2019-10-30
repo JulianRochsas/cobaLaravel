@@ -24,3 +24,11 @@ Route::delete('/students/{students}', 'StudentsController@destroy');
 Route::get('/students/{students}/edit', 'StudentsController@edit');
 Route::patch('/students/{students}', 'StudentsController@update');
 // Route::resource('students', 'StudentsController');
+
+//JURUSAN
+Route::get('/jurusan', 'JurusanController@index');
+Route::get('/jurusan/create', 'JurusanController@create');
+Route::post('/jurusan', 'JurusanController@store');
+Route::delete('/jurusan/{jurusan}', 'JurusanController@destroy');
+Route::get('/jurusan/{jurusan}/edit', 'JurusanController@edit');
+Route::patch('/jurusan/{jurusan}', 'JurusanController@update');

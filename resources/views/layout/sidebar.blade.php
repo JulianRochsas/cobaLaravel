@@ -24,6 +24,11 @@
         <i class="ni ni-bullet-list-67 text-red"></i> Student
       </a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link " href="{{ url('/jurusan') }}">
+            <i class="ni ni-bullet-list-67 text-red"></i> Jurusan
+        </a>
+    </li>
   </ul>
   <!-- Divider -->
   <hr class="my-3">
