@@ -31,15 +31,21 @@ class JurusanController extends Controller
 
     public function edit(Jurusan $jurusan)
     {
-        return view('jurusan.edit', ['jurusan'=>$jurusan]);
+        return view('jurusan.edit', compact('jurusan'));
     }
 
-    public function update(Jurusan $jurusan, Request $request)
+    public function update(Request $request, Jurusan $jurusan)
     {
         Jurusan::where('id', $jurusan->id)->update([
             'nama_jurusan' => $request->nama_jurusan
         ]);
         return redirect('/jurusan')->with('status', 'Data berhasil diubah');
+    }
+
+    public function destroy(Jurusan $jurusan)
+    {
+        Jurusan::destroy($jurusan->id);
+        return redirect('/jurusan')->with('status', 'Data berhasil dihapus');
     }
 
 

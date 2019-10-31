@@ -14,11 +14,11 @@
                                 <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                                 </div>
-                                <input class="form-control @error('nama_jurusan') is-invalid @enderror" placeholder="Nama Jurusan" name="nama_jurusan" type="text" value="{{ $jurusan->nama }}">
+                                <input class="form-control @error('nama_jurusan') is-invalid @enderror" placeholder="Nama Jurusan" name="nama_jurusan" type="text" value="{{ $jurusan->nama_jurusan }}">
                                 @error('nama_jurusan') <div class="invalid-feedback"> {{$message}} </div> @enderror
                             </div>
                             <div class="text-center">
-                            <button type="submit" class="btn btn-primary mt-4">Tambah Data</button>
+                            <button type="submit" class="btn btn-primary mt-4">Edit Data</button>
                             </div>
                         </form>
             </div>

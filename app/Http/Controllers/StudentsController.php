@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Student;
+use App\Jurusan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -15,7 +16,21 @@ class StudentsController extends Controller
      */
     public function index()
     {
-        $students = Student::all();
+        // $students = DB::table('students')
+        //     ->join('jurusan', 'jurusan.id', '=', 'students.jurusan_id')
+        //     ->select('students.nama','students.nrp', 'students.email','jurusan.nama_jurusan')
+        //     ->get();
+        // return view('student.index', compact('students'));
+
+        // $students = Student::with('getUpdatedBy')->get();
+
+        // return view('student.index',compact('students'));
+
+        // $students = Student::with(['jurusan'])->get();
+        $students = Jurusan::find(1)->students;
+        // return response()->json(['students' => $students]);
+
+        // $students = Student::all();
         return view('student.index', compact('students'));//compact('students')) sama aja => ['students' => $students]
     }
 

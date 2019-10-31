@@ -29,6 +29,7 @@ Route::patch('/students/{students}', 'StudentsController@update');
 Route::get('/jurusan', 'JurusanController@index');
 Route::get('/jurusan/create', 'JurusanController@create');
 Route::post('/jurusan', 'JurusanController@store');
-Route::delete('/jurusan/{jurusan}', 'JurusanController@destroy');
+Route::delete('/jurusan/{jurusan}/destroy', 'JurusanController@destroy');
 Route::get('/jurusan/{jurusan}/edit', 'JurusanController@edit');
 Route::patch('/jurusan/{jurusan}', 'JurusanController@update');
+// Route::resource('jurusan', 'JurusanController');

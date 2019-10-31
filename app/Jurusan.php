@@ -11,4 +11,13 @@ class Jurusan extends Model
     protected $table = 'jurusan';
 
     protected $fillable = ['nama_jurusan'];
+
+    public function students()
+    {
+        return $this->hasMany('App\Student', 'id');
+    }
+    // public function jurusan()
+    // {
+    //     return $this->belongsTo('App\Student');
+    // }
 }

@@ -9,5 +9,20 @@ class Student extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['nama', 'nrp', 'email', 'jurusan'];
+    protected $fillable = ['nama', 'nrp', 'email', 'jurusan_id'];
+
+    // public function jurusan()
+    // {
+    //     return $this->hasMany('App\Jurusan');
+    // }
+
+    // public function student()
+    // {
+    //     return $this->hasMany('App\Jurusan');
+    // }
+
+    // public function getUpdatedBy()
+    // {
+    // 	return $this->hasOne(Jurusan::class, 'id', 'jurusan_id');
+    // }
 }

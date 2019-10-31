@@ -53,8 +53,8 @@
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="{{ $jurusan->id }}/edit">Edit</a>
-                          <form action="{{ $jurusan->id }}" method="POST">
+                          <a class="dropdown-item" href="/jurusan/{{ $jurusan->id }}/edit">Edit</a>
+                          <form action="jurusan/{{ $jurusan->id }}/destroy" method="POST">
                             @method('delete')
                             @csrf
                             <button type="submit" class="dropdown-item">Delete</button>
