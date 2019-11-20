@@ -14,10 +14,6 @@ class Jurusan extends Model
 
     public function students()
     {
-        return $this->hasMany('App\Student', 'id');
+        return $this->hasMany('App\Student');
     }
-    // public function jurusan()
-    // {
-    //     return $this->belongsTo('App\Student');
-    // }
 }

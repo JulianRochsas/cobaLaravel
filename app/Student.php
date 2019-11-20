@@ -11,10 +11,10 @@ class Student extends Model
 
     protected $fillable = ['nama', 'nrp', 'email', 'jurusan_id'];
 
-    // public function jurusan()
-    // {
-    //     return $this->hasMany('App\Jurusan');
-    // }
+    public function jurusan()
+    {
+        return $this->belongsTo('App\Jurusan');
+    }
 
     // public function student()
     // {
